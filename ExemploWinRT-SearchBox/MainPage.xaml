@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="ExemploWinRT_SearchBox.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ExemploWinRT_SearchBox"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SearchBox HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Width="250"
+                   Margin="40,60"
+                   PlaceholderText="Digite para pesquisar..."
+                   QuerySubmitted="SearchBox_QuerySubmitted"
+                   SuggestionsRequested="Searchbox_SuggestionsRequested"/>
+    </Grid>
+</Page>
