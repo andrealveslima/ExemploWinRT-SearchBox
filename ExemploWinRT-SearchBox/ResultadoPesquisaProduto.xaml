@@ -93,7 +93,7 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" Margin="0,0,0,10" Width="40" Height="40">
-                                    <Image Source="{Binding Image}" Stretch="UniformToFill"/>
+                                    <Image Source="Assets/SmallLogo.scale-100.png" Stretch="UniformToFill"/>
                                 </Border>
                                 <StackPanel Grid.Column="1" Margin="10,-10,0,0">
                                     <TextBlock Text="{Binding Nome}" TextWrapping="NoWrap" Style="{StaticResource BodyTextBlockStyle}"/>
